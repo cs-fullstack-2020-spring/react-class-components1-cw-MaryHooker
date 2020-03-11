@@ -1,4 +1,14 @@
 # Class components
+#### Nice touch with the styling since you had so much time left over after one and two (code ninja!). Looks good. Super close on the challenge but you should use map to iterate through the array to render the component bc for each does not return.
+Found this right as y'all were levavin study session
+```
+Well, the forEach() method doesn’t actually return anything (undefined). It simply calls a provided function on each element in your array. This callback is allowed to mutate the calling array.
+Meanwhile, the map() method will also call a provided function on every element in the array. The difference is that map() utilizes return values 
+```
+[source](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
+We have to use return because that's how our components are rendered
+#### Score : 5/5
+
 
 # React Introduction Class Components 1 Classwork
 
