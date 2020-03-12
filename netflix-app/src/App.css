@@ -4,11 +4,45 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 28vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 19px;
   color: white;
+}
+
+body{
+  background-color: #282c34;
+}
+.purple{
+  color: rgb(150, 23, 150);
+}
+
+.pink{
+  color: rgb(255, 71, 101);
+}
+
+.green{
+  color: rgb(21, 122, 21);
+}
+
+.orange{
+  color: orangered;
+}
+
+.picSize{
+  width: 18%;
+  border: 8px solid rgb(255, 71, 101);
+}
+
+.pic2size{
+  width: 20%;
+  border: 9px solid rgb(21, 122, 21);
+}
+
+.pic3size{
+  width: 29%;
+  border: 6px solid orangered;
 }

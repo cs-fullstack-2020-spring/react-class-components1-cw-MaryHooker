@@ -7,21 +7,22 @@ class Netflix extends Component {
     }
 
     render() {
-        const netflixArray = [
-            { movieName: 'Hook', yearReleased: '1991', genre: 'Comedy'},
-            { movieName: 'The Fifth Element', yearReleased: '1997', genre: 'Action Scifi'},
-            { movieName: 'Notting Hill', yearReleased: '1999', genre: 'RomCom'}, 
+        const movieArray = [
+            { movieName: 'Hook', yearReleased: '1991', genre: 'Comedy' },
+            { movieName: 'The Fifth Element', yearReleased: '1997', genre: 'Action Scifi' },
+            { movieName: 'Notting Hill', yearReleased: '1999', genre: 'RomCom' },
         ];
+
         return (
             <div>
+                <h1 className='purple'>Netflix</h1>
                 {
-                    netflixArray.foreach(
+                    movieArray.map(
                         (m) => {
-                            <DisplayMovies movieList={m}/> 
-                        }
-                    )
+                            return <DisplayMovies movieList={m} />
+                        })
+
                 }
-                <DisplayMovies />
             </div>
         )
     }

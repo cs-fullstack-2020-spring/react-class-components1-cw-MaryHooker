@@ -7,10 +7,13 @@ class DisplayMovies extends Component{
 
     render(){
         return(
-            <div>
-                <h1>Movie: {this.props.movieList}</h1>
+            <div >
+                <p className= 'pink'>Name: {this.props.movieList.movieName}</p>
+                <p className='green'>Year Released: {this.props.movieList.yearReleased}</p>
+                <p className='orange'>Genre: {this.props.movieList.genre}</p>
+                <hr/>
             </div>
-        )
+        );
     }
 }
 
